@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USS</title>
+    <link rel="stylesheet" href="css/estru.css">
+    <script>
+        // Función para desplazar la vista a la sección de "Fundamento Teorico"
+        function goToFundamentoTeorico(event) {
+            // Previene el comportamiento predeterminado del enlace
+            event.preventDefault();
+
+            // Obtiene la sección "Fundamento Teorico" por su id
+            const section = document.getElementById("fundamento-teorico");
+            if (section) {
+                // Desplaza suavemente a la sección "Fundamento Teorico"
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <a href="index.html" class="navbar-brand">USS</a>
+        <div class="container">
+            <div class="navbar-nav-1">
+                <!-- Llama a la función JavaScript al hacer clic -->
+                <a href="index.html" class="nav-item nav-link" onclick="goToFundamentoTeorico(event)">Fundamento Teorico</a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <main class="content">
+        <h1>Bienestar Personal</h1>
+        <p>
+
+            El bienestar personal en jóvenes universitarios está intrínsecamente ligado al uso de herramientas
+            digitales. Estas tecnologías ofrecen acceso a una vasta cantidad de información y recursos
+            que pueden facilitar el aprendizaje y mejorar la productividad. Sin embargo, el uso excesivo
+            de dispositivos digitales puede llevar a la procrastinación, el aislamiento social y el estrés.
+            Es fundamental que los estudiantes desarrollen un equilibrio en su vida digital, estableciendo
+            límites en el tiempo de pantalla y priorizando actividades presenciales que fomenten el bienestar
+            emocional, como el ejercicio y las relaciones internas.
+        </p>
+        <p>
+            Además, las herramientas digitales pueden ser un aliado poderoso para la salud mental y el
+            desarrollo personal. Aplicaciones de meditación, seguimiento de hábitos y gestión del tiempo
+            ayudan a los jóvenes a organizar su vida ya establecer rutinas saludables. Es esencial que los
+            universitarios sean críticos en la selección de las herramientas digitales que utilizan, 
+            favoreciendo aquellas que promueven el autocuidado y la resiliencia. La educación en el uso
+            consciente de la tecnología puede empoderar a los estudiantes, permitiéndoles aprovechar al 
+            máximo los beneficios de lo digital mientras mantiene un estilo de vida.
+        </p>
+
+    </main>
+
+</body>
+</html>

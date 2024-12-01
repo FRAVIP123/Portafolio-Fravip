@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USS</title>
+    <link rel="stylesheet" href="css/estru.css">
+    <script>
+        // Función para desplazar la vista a la sección de "Fundamento Teorico"
+        function goToFundamentoTeorico(event) {
+            // Previene el comportamiento predeterminado del enlace
+            event.preventDefault();
+
+            // Obtiene la sección "Fundamento Teorico" por su id
+            const section = document.getElementById("fundamento-teorico");
+            if (section) {
+                // Desplaza suavemente a la sección "Fundamento Teorico"
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <a href="index.html" class="navbar-brand">USS</a>
+        <div class="container">
+            <div class="navbar-nav-1">
+                <!-- Llama a la función JavaScript al hacer clic -->
+                <a href="index.html" class="nav-item nav-link" onclick="goToFundamentoTeorico(event)">Fundamento Teorico</a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <main class="content">
+        <h1>Estrategia Digital De La Salud</h1>
+        <p>Las estrategias digitales en salud para estudiantes universitarios
+            se han convertido en una herramienta esencial para mejorar el bienestar y la calidad
+            de vida en la comunidad educativa. A través de aplicaciones móviles y plataformas en línea, 
+            los estudiantes pueden acceder a información sobre alimentación saludable, ejercicio físico,
+            manejo del estrés y sueño. Estas estrategias permiten personalizar recomendaciones basadas
+            en sus necesidades y hábitos diarios, promoviendo una vida equilibrada y saludable. Además,
+            muchos programas ofrecen recordatorios y seguimiento de actividades, 
+            ayudando a los estudiantes a mantener la motivación y fomentar prácticas saludables que, 
+            a largo plazo, contribuyen a un mejor rendimiento académico y una mayor estabilidad emocional.</p>
+            <p>
+                La implementación de estrategias digitales de salud también fomenta la prevención y detección 
+                temprana de problemas de salud mental en estudiantes universitarios. Con el aumento de
+                aplicaciones que facilitan la atención psicológica en línea y el asesoramiento virtual,
+                los estudiantes pueden acceder a apoyo profesional sin barreras geográficas ni de horarios.
+                Estas plataformas suelen incluir herramientas de autoevaluación, recursos educativos y 
+                ejercicios de relajación que reducen la ansiedad y el estrés. Además, las estrategias 
+                digitales fomentan la creación de comunidades de apoyo donde los estudiantes pueden compartir
+                experiencias y sentirse acompañados, mejorando la resiliencia y reduciendo el riesgo 
+                de aislamiento y problemas de salud mental.
+            </p>
+            <p>
+                
+            </p>
+    </main>
+
+</body>
+</html>

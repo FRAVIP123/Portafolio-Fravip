@@ -1,0 +1,154 @@
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333333; /* Fondo negro */
+    padding: 10px 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease, padding 0.3s ease;
+}
+
+.navbar .navbar-brand {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Alinea navbar-nav-1 a la derecha */
+.navbar-nav-1 {
+    margin-left: -80%; /* Mueve el contenedor a la derecha */
+}
+
+.navbar-nav-1 .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav-1 .nav-link:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/**********************************/
+/************ Content CSS *********/
+/**********************************/
+.content {
+    margin-top: 70px;
+    margin-bottom: 20px; /* Añadido para más espacio en la parte inferior */
+    text-align: center;
+    padding: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333333;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transition: transform 0.5s ease;
+}
+
+
+.content:hover {
+    transform: scale(1.02);
+}
+
+.content h1 {
+    font-size: 2.5em;
+    color: #333333;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.content p {
+    font-size: 1.2em;
+    color: #555555;
+    animation: fadeIn 1.5s ease-in-out 0.5s;
+    text-align: justify;
+}
+
+/* Fondo de la página */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.VSjTLmtkLQE3WyRxzrYEiwHaDt&pid=Api&P=0&h=180'); /* Cambia la ruta por la de tu imagen */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/**********************************/
+/************ Responsive CSS *******/
+/**********************************/
+@media (max-width: 768px) {
+    .navbar .navbar-brand {
+        font-size: 20px;
+    }
+    .navbar-nav-1 .nav-link {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    .content h1 {
+        font-size: 2em;
+    }
+    .content p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px 3%;
+    }
+    .content {
+        padding: 15px;
+        max-width: 100%;
+    }
+    .content h1 {
+        font-size: 1.8em;
+    }
+    .content p {
+        font-size: 1em;
+    }
+}
+
+/**********************************/
+/************ Animaciones *********/
+/**********************************/
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
